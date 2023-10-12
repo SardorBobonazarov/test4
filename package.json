@@ -27,6 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "json-server db.json --watch -port 8080",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "msw-init": "npx msw init public/ --save"
@@ -60,5 +61,6 @@
     "@types/uuid": "^8.3.4",
     "react-scripts": "^5.0.1",
     "typescript": "^4.4.2"
-  }
+  },
+  "proxy": "http://localhost:8080"
 }
